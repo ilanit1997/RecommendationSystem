@@ -1,5 +1,4 @@
 
-import ex2_318368107_319000055 as ex2
 import pandas as pd
 import numpy as np
 import time
@@ -50,9 +49,9 @@ def main():
     start = time.time()
     # profiler = cProfile.Profile()
     # profiler.enable()
-    baseline_recommender = ex2.BaselineRecommender(train)
+    baseline_recommender = BaselineRecommender(train)
     print(baseline_recommender.rmse(test))
-    #neighborhood_recommender = ex2.NeighborhoodRecommender(train)
+    #neighborhood_recommender = NeighborhoodRecommender(train)
     #print(neighborhood_recommender.rmse(test))
     # profiler.disable()
     # stats = pstats.Stats(profiler).sort_stats('tottime')
@@ -65,7 +64,7 @@ def main():
     #
     #ratings_comp = pd.read_csv('ratings_comp.csv')
     #train_comp, test_comp = train_test_split(ratings_comp)
-    #comp_recommender = ex2.CompetitionRecommender(train_comp)
+    #comp_recommender = CompetitionRecommender(train_comp)
     #print(comp_recommender.rmse(test_comp))
 
     print(f'Took {time.time() - start:.2f}s')
