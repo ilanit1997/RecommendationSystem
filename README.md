@@ -1,6 +1,6 @@
 # RecommendationSystem
 
-Background:
+**Background:**
 
 The data file is ratings.csv. Every record in the file is of the form user, item, rating, timestamp.
 
@@ -17,9 +17,13 @@ timestamp – The timestamp in which the rating was given.
 
 
 The first baseline model for recommender systems is 
+
 𝑟𝑢𝑖 ̂ = 𝑅̂ + 𝑏𝑢 + 𝑏𝑖 where
+
 𝑅̂ - average of all the ratings in the user-item ratings matrix 𝑅,
+
 𝑏𝑢 - average rating for user 𝑢 and
+
 𝑏𝑖 -  average rating for item 𝑖.
 
 
