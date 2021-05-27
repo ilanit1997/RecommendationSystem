@@ -58,7 +58,7 @@ def main():
     # stats.strip_dirs()
     # stats.sort_stats('cumulative')
     # stats.print_stats()
-    #ls_recommender = ex2.LSRecommender(train)
+    #ls_recommender = LSRecommender(train)
     #ls_recommender.solve_ls()
     #print(ls_recommender.rmse(test))
     #
