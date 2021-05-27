@@ -3,9 +3,13 @@
 Background:
 
 The data file is ratings.csv. Every record in the file is of the form user, item, rating, timestamp.
+
 user – The user’s unique identifier
+
 item – The item’s unique identifier
+
 rating – The rating that was given to the item by the user, it is in the range [0.5,5]
+
 timestamp – The timestamp in which the rating was given.
 
 
@@ -24,8 +28,11 @@ The first baseline model for recommender systems is
 
 NeighborhoodRecommender makes use of the similarities of users and the similarities of items to
 make predictions. 
+
 We will be using only the user similarities.
+
 The prediction is done with the 3 nearest neighbors.
+
 
 
 **Regression model**
@@ -36,7 +43,9 @@ The rating estimate for user 𝑢, item 𝑖 and timestamp 𝑡 is:
 
 where:
 𝑏𝑑 – A parameter for ratings that were given in daytime (between 6am and 6pm).
+
 𝑏𝑛 – A parameter for ratings that were given in the night (between 6pm and 6am).
+
 𝑏𝑤 – A parameter for ratings that were given in the weekend (Friday or Saturday).
 
 
